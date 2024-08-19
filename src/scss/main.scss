@@ -1,0 +1,21 @@
+@import "./base/reset";
+@import "./base/variables";
+@import "./base/base";
+@import "./base/typography";
+
+@import "./loyout/grids";
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/modal";
+@import "./components/advantages";
+@import "./components/work";
+@import "./components/team";
+@import "./components/teammate";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/logo";
+@import "./components/button";
+
+@import "./pages/components/project";
+@import "./pages/components/button";

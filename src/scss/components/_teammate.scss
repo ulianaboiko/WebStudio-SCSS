@@ -1,0 +1,53 @@
+.teammate {
+  background-color: var(--colorTextAdditional);
+  border-radius: 0 0 4px 4px;
+  flex-basis: calc((100% - 90px) / 4);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  padding-bottom: 30px;
+}
+.teammate-foto {
+  margin-bottom: 30px;
+}
+.teammate-name {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.teammate-role {
+  font-size: 16px;
+  color: var(--colorTextSecondary);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.teammate-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.teammate-link {
+  display: block;
+  background-color: #ffffff;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+}
+.teammate-icon:hover {
+  background-color: var(--colorTextHover);
+  fill: var(--colorTextAdditional);
+}
+.teammate-icon {
+  fill: var(--colorIcons);
+  height: 44px;
+  width: 44px;
+  padding: 12px;
+  border-radius: 50%;
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
