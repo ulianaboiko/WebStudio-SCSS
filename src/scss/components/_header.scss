@@ -1,38 +1,38 @@
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-bottom: 1px solid var(--colorBorder);
+  border-bottom: 1px solid $color-border;
 }
-.header-container {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.nav-list {
+.menu__list {
   display: flex;
   align-items: center;
   gap: 50px;
 }
-.nav-link {
+.menu__link {
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--colorTextPrimary);
+  color: $color-text-primary;
   position: relative;
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-link:hover {
-  color: var(--colorTextHover);
+.menu__link:hover {
+  color: $color-text-hover;
 }
-.nav-link::after {
+.menu__link::after {
   content: "";
   border-radius: 2px;
   width: 100%;
   height: 4px;
-  background-color: var(--colorTextHover);
+  background-color: $color-text-hover;
   position: absolute;
   bottom: -28px;
   left: 0;
@@ -44,44 +44,44 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-link-active::after,
-.nav-link:hover::after {
+.menu__link--active::after,
+.menu__link:hover::after {
   opacity: 1;
   transform: scaleX(1) translateY(0);
 }
-.header-address-list {
+.header__address {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-.address-link {
+.address__link {
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: var(--colorTextSecondary);
+  color: $color-text-secondary;
   text-decoration: none;
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address-item:hover .address-link {
-  color: var(--colorTextHover);
+.address__item:hover .address__link {
+  color: $color-text-hover;
 }
-.address-icon {
-  fill: var(--colorTextSecondary);
+.address__icon {
+  fill: $color-text-secondary;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address-item:hover .address-icon {
-  fill: var(--colorTextHover);
+.address__item:hover .address__icon {
+  fill: $color-text-hover;
 }
-.address-icon-one {
+.address__icon--one {
   width: 16px;
   height: 12px;
   margin-right: 10px;
 }
-.address-icon-two {
+.address__icon--two {
   width: 10px;
   height: 16px;
   margin-right: 10px;

@@ -1,51 +1,51 @@
 .footer {
-  background-color: var(--colorBackgroundPrimary);
+  background-color: $color-background-primary;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-container {
+.footer__container {
   display: flex;
   gap: 90px;
   align-items: baseline;
 }
-.footer-logo-and-address {
+.footer__logaddress {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.footer-address-list {
+.footer__list {
   display: flex;
   flex-direction: column;
   gap: 9px;
 }
-.footer-address {
+.footer__address {
   line-height: 1.71429;
-  color: var(--colorTextAdditional);
+  color: $color-text-additional;
 }
-.footer-link {
+.footer__link {
   line-height: 1.71429;
-  color: var(--colorTextAdditionalProzoruy);
+  color: $color-text-additional-prozoruy;
 }
-.footer-title {
+.footer__title {
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--colorTextAdditional);
+  color: $color-text-additional;
 }
-.footer-icons {
+.footer__icons {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.footer-icons-list {
+.icons__list {
   display: flex;
   gap: 10px;
   align-items: center;
 }
-.icons-link {
+.icons__link {
   display: block;
   height: 44px;
   width: 44px;
-  background-color: var(--colorIconsFooter);
+  background-color: $color-icons-footer;
   border-radius: 50%;
   padding: 12px;
 
@@ -53,26 +53,26 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icons-link:hover {
-  background-color: var(--colorTextHover);
+.icons__link:hover {
+  background-color: $color-text-hover;
 }
-.footer-icon {
-  fill: var(--colorTextAdditional);
+.footer__icon {
+  fill: $color-text-additional;
   width: 20px;
   height: 20px;
 }
-.form-title {
+.form__title {
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--colorTextAdditional);
+  color: $color-text-additional;
   margin-bottom: 20px;
 }
-.footer-contact {
+.footer__contact {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-.footer-input {
+.footer__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   width: 360px;
@@ -81,12 +81,12 @@
   background-color: rgba(33, 150, 243, 0);
   padding: 15px;
 }
-.footer-input:focus {
+.footer__input:focus {
   outline: none;
 }
-.footer-input::placeholder {
+.footer__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: var(--colorTextAdditionalProzoruy);
+  color: $color-text-additional-prozoruy;
 }

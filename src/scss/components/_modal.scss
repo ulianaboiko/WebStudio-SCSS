@@ -18,7 +18,7 @@
   transform: translate(-50%, 200%) scale(0);
 }
 .modal {
-  background-color: var(--colorTextAdditional);
+  background-color: $color-text-additional;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -37,23 +37,23 @@
   display: block;
   width: 30px;
   height: 30px;
-  background-color: var(--colorTextAdditional);
+  background-color: $color-text-additional;
   padding: 8px;
   border-radius: 50%;
-  border: 1px solid var(--colorIcons);
+  border: 1px solid $color-icons;
 }
 .btn-close-img {
   height: 11px;
   width: 11px;
-  background-color: var(--colorTextAdditional);
-  fill: var(--colorTextPrimary);
+  background-color: $color-text-additional;
+  fill: $color-text-primary;
 
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-close:hover .btn-close-img {
-  fill: var(--colorTextHover);
+  fill: $color-text-hover;
 }
 .no-scroll {
   overflow: hidden;
@@ -80,20 +80,20 @@
   position: relative;
 }
 .form-contact:focus-within {
-  fill: var(--colorTextHover);
+  fill: $color-text-hover;
 }
 .form-contact:hover {
-  border-color: var(--colorTextHover);
-  fill: var(--colorTextHover);
+  border-color: $color-text-hover;
+  fill: $color-text-hover;
 }
 .form-label {
   font-size: 12px;
   letter-spacing: 0.01em;
-  color: var(--colorTextSecondary);
+  color: $color-text-secondary;
 }
 .form-input {
   position: relative;
-  border: 1px solid var(--colorFormInput);
+  border: 1px solid $color-form-input;
   border-radius: 4px;
   width: 448px;
   height: 40px;
@@ -109,7 +109,7 @@
   position: absolute;
   top: 11px;
   left: 12px;
-  color: var(--colorTextPrimary);
+  color: $color-text-primary;
 
   transition-property: fill;
   transition-duration: 250ms;
@@ -117,15 +117,15 @@
 }
 .form-input:hover,
 .form-textarea:hover {
-  border-color: var(--colorTextHover);
+  border-color: $color-text-hover;
 }
 .form-input:focus,
 .form-textarea:focus {
   outline: none;
-  border-color: var(--colorTextHover);
+  border-color: $color-text-hover;
 }
 .form-textarea {
-  border: 1px solid var(--colorFormInput);
+  border: 1px solid $color-form-input;
   border-radius: 4px;
   width: 448px;
   height: 120px;
@@ -150,7 +150,7 @@
 .checkbox-label {
   line-height: 1.71429;
   letter-spacing: 0.03em;
-  color: var(--colorTextSecondary);
+  color: $color-text-secondary;
 }
 .checkbox-link {
   text-decoration: underline;

@@ -1,11 +1,11 @@
-.projects-list {
+.projects__list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
 }
-.list-button {
+.list__button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -21,9 +21,9 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list-button:hover {
-  color: var(--colorTextAdditional);
-  background-color: var(--colorTextHover);
+.list__button:hover {
+  color: $color-text-additional;
+  background-color: $color-text-hover;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }

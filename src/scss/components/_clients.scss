@@ -2,22 +2,22 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.clients-title {
+.clients__title {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
   margin-bottom: 50px;
 }
-.clients-list {
+.clients__list {
   display: flex;
   gap: 30px;
 }
-.clients-link {
+.clients__link {
   display: block;
   width: 170px;
   height: 92px;
   padding: 16px 32px;
-  border: 1px solid var(--colorIcons);
+  border: 1px solid $color-icons;
   border-radius: 4px;
   flex-basis: calc((100% - 150px) / 6);
 
@@ -26,16 +26,16 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-link:hover .clients-icon {
-  fill: var(--colorTextHover);
+.clients__link:hover .clients__icon {
+  fill: $color-text-hover;
 }
-.clients-link:hover {
-  border: 1px solid var(--colorTextHover);
+.clients__link:hover {
+  border: 1px solid $color-text-hover;
 }
-.clients-icon {
+.clients__icon {
   width: 106px;
   height: 60px;
-  fill: var(--colorIcons);
+  fill: $color-icons;
 
   transition-property: border, fill;
   transition-duration: 250ms;

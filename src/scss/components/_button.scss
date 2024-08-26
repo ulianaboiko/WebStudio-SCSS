@@ -4,8 +4,8 @@
   line-height: 1.875;
   letter-spacing: 0.06em;
   text-align: center;
-  color: var(--colorTextAdditional);
-  background-color: var(--colorTextHover);
+  color: $color-text-additional;
+  background-color: $color-text-hover;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 10px 32px;
   border-radius: 4px;
@@ -15,7 +15,7 @@
 }
 .hero-button:hover {
   opacity: 0.9;
-  box-shadow: 4px 3px 5px 0px var(--colorTextPrimary);
+  box-shadow: 4px 3px 5px 0px $color-text-primary;
 }
 .modal-btn-submit {
   border-radius: 4px;
@@ -26,17 +26,17 @@
   line-height: 1.875;
   letter-spacing: 0.06em;
   text-align: center;
-  color: var(--colorTextAdditional);
+  color: $color-text-additional;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: var(--colorTextHover);
+  background-color: $color-text-hover;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn-submit:hover {
-  box-shadow: 4px 3px 5px 0px var(--colorTextPrimary);
+  box-shadow: 4px 3px 5px 0px $color-text-primary;
 }
-.footer-btn-submit {
+.btn__submit {
   border-radius: 4px;
   width: 200px;
   height: 50px;
@@ -45,9 +45,9 @@
   line-height: 1.875;
   letter-spacing: 0.06em;
   text-align: center;
-  color: var(--colorTextAdditional);
+  color: $color-text-additional;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: var(--colorTextHover);
+  background-color: $color-text-hover;
   transition-property: opacity, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -57,12 +57,12 @@
   gap: 10px;
   padding: 10px 30px;
 }
-.footer-btn-submit:hover {
+.btn__submit:hover {
   opacity: 0.9;
-  box-shadow: 4px 3px 5px 0px var(--colorTextPrimary);
+  box-shadow: 4px 3px 5px 0px $color-text-primary;
 }
-.footer-btn-img {
+.btn__img {
   width: 24px;
   height: 24px;
-  fill: var(--colorTextAdditional);
+  fill: $color-text-additional;
 }

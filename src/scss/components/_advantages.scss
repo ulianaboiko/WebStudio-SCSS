@@ -2,42 +2,42 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.advantages-list {
+.advantages__list {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
-.advantages-item {
+.advantages__item {
   flex-basis: calc((100% - 90px) / 4);
 }
-.advantages-item::before {
+.advantages__item::before {
   content: "";
   display: block;
   height: 120px;
   border-radius: 4px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: var(--colorBackgroundSecondary);
+  background-color: $color-background-secondary;
   margin-bottom: 30px;
 }
-.advantages-item-1::before {
+.advantages__item--1::before {
   background-image: url(../images/advantages/antenna.svg);
 }
-.advantages-item-2::before {
+.advantages__item--2::before {
   background-image: url(../images/advantages/clock.svg);
 }
-.advantages-item-3::before {
+.advantages__item--3::before {
   background-image: url(../images/advantages/diagram.svg);
 }
-.advantages-item-4:before {
+.advantages__item--4:before {
   background-image: url(../images/advantages/astronaut.svg);
 }
-.advantages-title {
+.advantages__title {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.advantages-text {
+.advantages__text {
   line-height: 1.71429;
-  color: var(--colorTextSecondary);
+  color: $color-text-secondary;
 }
