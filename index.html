@@ -105,69 +105,77 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button class="btn-close btn" data-modal-close>
-                <svg class="btn-close-img">
+              <button class="btn__close btn" data-modal-close>
+                <svg class="modal__img">
                   <use
                     href="./src/images/icons/symbol-defs-2.svg#icon-close"
                   ></use>
                 </svg>
               </button>
-              <form action="#" class="modal-form">
-                <h2 class="modal-title">
+              <form action="#" class="modal__form">
+                <h2 class="modal__title">
                   Залиште свої дані, ми вам передзвонимо
                 </h2>
-                <div class="form-contacts">
-                  <label for="name" class="form-label">Ім'я</label>
-                  <div class="form-contact">
-                    <input type="text" id="name" class="form-input" required />
-                    <svg class="form-img">
+                <div class="form__contacts">
+                  <label for="name" class="form__label">Ім'я</label>
+                  <div class="form__contact">
+                    <input type="text" id="name" class="form__input" required />
+                    <svg class="form__img">
                       <use
                         href="./src/images/icons/symbol-defs-2.svg#icon-blackperson"
                       ></use>
                     </svg>
                   </div>
-                  <label for="tel" class="form-label">Телефон</label>
-                  <div class="form-contact">
-                    <input type="number" id="tel" class="form-input" required />
-                    <svg class="form-img">
+                  <label for="tel" class="form__label">Телефон</label>
+                  <div class="form__contact">
+                    <input
+                      type="number"
+                      id="tel"
+                      class="form__input"
+                      required
+                    />
+                    <svg class="form__img">
                       <use
                         href="./src/images/icons/symbol-defs-2.svg#icon-blackphone"
                       ></use>
                     </svg>
                   </div>
-                  <label for="mail" class="form-label">Пошта</label>
-                  <div class="form-contact">
-                    <input type="email" id="mail" class="form-input" required />
-                    <svg class="form-img">
+                  <label for="mail" class="form__label">Пошта</label>
+                  <div class="form__contact">
+                    <input
+                      type="email"
+                      id="mail"
+                      class="form__input"
+                      required
+                    />
+                    <svg class="form__img">
                       <use
                         href="./src/images/icons/symbol-defs-2.svg#icon-blackemail"
                       ></use>
                     </svg>
                   </div>
-                  <label for="coment" class="form-label">Коментар</label>
+                  <label for="coment" class="form__label">Коментар</label>
                   <textarea
                     name="coment"
                     id="coment"
-                    class="form-textarea"
+                    class="form__textarea"
                     placeholder="Введіть текст"
                   ></textarea>
 
-                  <div class="form-check-and-text">
+                  <div class="form__check">
                     <input
                       type="checkbox"
-                      class="form-inp-checkbox"
+                      class="form__checkbox"
                       id="dogovir"
                       required
                     />
-                    <label class="checkbox-label" for="dogovir">
+                    <label class="checkbox__label" for="dogovir">
                       Погоджуюся з розсилкою та приймаю
-                      <a href="#" class="checkbox-link">Умови договору</a>
+                      <a href="#" class="checkbox__link">Умови договору</a>
                     </label>
                   </div>
                 </div>
-                <button type="submit" class="modal-btn-submit">
-                  Відправити
-                </button>
+                <button type="submit" class="modal__submit">Відправити</button>
               </form>
             </div>
           </div>
@@ -355,41 +363,41 @@
               <img
                 src="./src/images/team/mykola.jpg"
                 alt="Микола Тарасов"
-                class="teammate-foto"
+                class="teammate__foto"
               />
-              <h3 class="teammate-name">Микола Тарасов</h3>
-              <p class="teammate-role">Marketing</p>
-              <ul class="teammate-list">
-                <li class="teammate-item">
-                  <a href="#" class="teammate-link">
-                    <svg class="teammate-icon">
+              <h3 class="teammate__name">Микола Тарасов</h3>
+              <p class="teammate__role">Marketing</p>
+              <ul class="teammate__list">
+                <li class="teammate__item">
+                  <a href="#" class="teammate__link">
+                    <svg class="teammate__icon">
                       <use
                         href="./src/images/icons/symbol-defs.svg#icon-instagram"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="teammate-item">
-                  <a href="#" class="teammate-link">
-                    <svg class="teammate-icon">
+                <li class="teammate__item">
+                  <a href="#" class="teammate__link">
+                    <svg class="teammate__icon">
                       <use
                         href="./src/images/icons/symbol-defs.svg#icon-twitter"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="teammate-item">
-                  <a href="#" class="teammate-link">
-                    <svg class="teammate-icon">
+                <li class="teammate__item">
+                  <a href="#" class="teammate__link">
+                    <svg class="teammate__icon">
                       <use
                         href="./src/images/icons/symbol-defs.svg#icon-facebook"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="teammate-item">
-                  <a href="#" class="teammate-link">
-                    <svg class="teammate-icon">
+                <li class="teammate__item">
+                  <a href="#" class="teammate__link">
+                    <svg class="teammate__icon">
                       <use
                         href="./src/images/icons/symbol-defs.svg#icon-in"
                       ></use>
@@ -403,41 +411,41 @@
               <img
                 src="./src/images/team/mikhail.jpg"
                 alt="Михайло Єрмаков"
-                class="teammate-foto"
+                class="teammate__foto"
               />
-              <h3 class="teammate-name">Михайло Єрмаков</h3>
-              <p class="teammate-role">UI Designer</p>
-              <ul class="teammate-list">
-                <li class="teammate-item">
-                  <a href="#" class="teammate-link">
-                    <svg class="teammate-icon">
+              <h3 class="teammate__name">Михайло Єрмаков</h3>
+              <p class="teammate__role">UI Designer</p>
+              <ul class="teammate__list">
+                <li class="teammate__item">
+                  <a href="#" class="teammate__link">
+                    <svg class="teammate__icon">
                       <use
                         href="./src/images/icons/symbol-defs.svg#icon-instagram"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="teammate-item">
-                  <a href="#" class="teammate-link">
-                    <svg class="teammate-icon">
+                <li class="teammate__item">
+                  <a href="#" class="teammate__link">
+                    <svg class="teammate__icon">
                       <use
                         href="./src/images/icons/symbol-defs.svg#icon-twitter"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="teammate-item">
-                  <a href="#" class="teammate-link">
-                    <svg class="teammate-icon">
+                <li class="teammate__item">
+                  <a href="#" class="teammate__link">
+                    <svg class="teammate__icon">
                       <use
                         href="./src/images/icons/symbol-defs.svg#icon-facebook"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="teammate-item">
-                  <a href="#" class="teammate-link">
-                    <svg class="teammate-icon">
+                <li class="teammate__item">
+                  <a href="#" class="teammate__link">
+                    <svg class="teammate__icon">
                       <use
                         href="./src/images/icons/symbol-defs.svg#icon-in"
                       ></use>
