@@ -21,33 +21,3 @@
   text-align: center;
   margin-bottom: 10px;
 }
-.teammate__list {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  text-align: center;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-.teammate__link {
-  display: block;
-  background-color: #ffffff;
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
-}
-.teammate__icon:hover {
-  background-color: $color-text-hover;
-  fill: $color-text-additional;
-}
-.teammate__icon {
-  fill: $color-icons;
-  height: 44px;
-  width: 44px;
-  padding: 12px;
-  border-radius: 50%;
-
-  transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}

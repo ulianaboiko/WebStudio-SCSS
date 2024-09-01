@@ -1,0 +1,30 @@
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.social__link {
+  display: block;
+  background-color: #ffffff;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+}
+.social__icon:hover {
+  background-color: $color-text-hover;
+  fill: $color-text-additional;
+}
+.social__icon {
+  fill: $color-icons;
+  height: 44px;
+  width: 44px;
+  padding: 12px;
+  border-radius: 50%;
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

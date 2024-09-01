@@ -1,6 +1,5 @@
 .advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @extend %paddind-to-section;
 }
 .advantages__list {
   display: flex;

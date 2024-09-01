@@ -1,5 +1,8 @@
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixin";
+
 @import "./base/reset";
-@import "./base/variables";
 @import "./base/base";
 @import "./base/typography";
 
@@ -8,10 +11,12 @@
 @import "./components/header";
 @import "./components/hero";
 @import "./components/modal";
+@import "./components/form";
 @import "./components/advantages";
 @import "./components/work";
 @import "./components/team";
 @import "./components/teammate";
+@import "./components/social";
 @import "./components/clients";
 @import "./components/footer";
 @import "./components/logo";
