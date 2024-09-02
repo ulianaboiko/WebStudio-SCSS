@@ -48,9 +48,7 @@
   background-color: $color-text-additional;
   fill: $color-text-primary;
 
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(fill);
 }
 .btn__close:hover .modal__img {
   fill: $color-text-hover;

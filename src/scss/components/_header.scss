@@ -4,14 +4,10 @@
   border-bottom: 1px solid $color-border;
 }
 .header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-just-align-gap(space-between, center, 0px);
 }
 .menu__list {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  @include flex-just-align-gap(none, center, 50px);
 }
 .menu__link {
   font-weight: 500;
@@ -20,9 +16,7 @@
   color: $color-text-primary;
   position: relative;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(color);
 }
 .menu__link:hover {
   color: $color-text-hover;
@@ -40,9 +34,7 @@
 
   transform: scaleX(0) translateY(10px);
   transform-origin: center;
-  transition-property: transform, opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(transform, opacity);
 }
 .menu__link--active::after,
 .menu__link:hover::after {
@@ -50,9 +42,7 @@
   transform: scaleX(1) translateY(0);
 }
 .header__address {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+  @include flex-just-align-gap(none, center, 30px);
 }
 .address__link {
   font-weight: 500;
@@ -60,18 +50,14 @@
   color: $color-text-secondary;
   text-decoration: none;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(color);
 }
 .address__item:hover .address__link {
   color: $color-text-hover;
 }
 .address__icon {
   fill: $color-text-secondary;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(fill);
 }
 .address__item:hover .address__icon {
   fill: $color-text-hover;

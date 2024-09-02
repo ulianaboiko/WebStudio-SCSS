@@ -2,9 +2,7 @@
   @extend %paddind-to-section;
 }
 .advantages__list {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  @include flex-just-align-gap(space-between, none, 30px);
 }
 .advantages__item {
   flex-basis: calc((100% - 90px) / 4);

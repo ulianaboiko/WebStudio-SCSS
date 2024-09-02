@@ -13,9 +13,7 @@
   /* border: 1px solid #eee; */
   flex-basis: calc((100% - 60px) / 3);
 
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(box-shadow);
 }
 .project:hover {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
@@ -39,9 +37,7 @@
   left: 0;
   top: 0;
   transform: translateY(101%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(transform);
 
   font-size: 18px;
   line-height: 1.55556;

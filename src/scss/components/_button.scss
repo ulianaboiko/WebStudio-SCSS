@@ -1,60 +1,20 @@
 .btn__hero {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: $color-text-additional;
-  background-color: $color-text-hover;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  padding: 10px 32px;
-  border-radius: 4px;
-  transition-property: opacity, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include button(4px, 10px 32px);
 }
 .btn__hero:hover {
   opacity: 0.9;
   box-shadow: 4px 3px 5px 0px $color-text-primary;
 }
 .modal__submit {
-  border-radius: 4px;
-  width: 200px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: $color-text-additional;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: $color-text-hover;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include button(4px, 10px 52px);
 }
 .modal__submit:hover {
   box-shadow: 4px 3px 5px 0px $color-text-primary;
 }
 .btn__submit {
-  border-radius: 4px;
-  width: 200px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  text-align: center;
-  color: $color-text-additional;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: $color-text-hover;
-  transition-property: opacity, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include button(4px, 10px 28px);
 
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  @include flex-just-align-gap(none, center, 10px);
   padding: 10px 30px;
 }
 .btn__submit:hover {

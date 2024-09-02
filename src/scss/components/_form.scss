@@ -1,7 +1,5 @@
 .form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @extend %flex-column;
 }
 .form__title {
   font-weight: 700;
@@ -10,8 +8,7 @@
   margin-bottom: 12px;
 }
 .form__contacts {
-  display: flex;
-  flex-direction: column;
+  @extend %flex-column;
   align-items: baseline;
   gap: 10px;
   margin-bottom: 30px;
@@ -39,9 +36,7 @@
   height: 40px;
   padding: 15px 5px 15px 42px;
 
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(border-color);
 }
 .form__img {
   width: 18px;
@@ -51,9 +46,7 @@
   left: 12px;
   color: $color-text-primary;
 
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(fill);
 }
 .form__input:hover,
 .form__textarea:hover {
@@ -73,9 +66,7 @@
   resize: none;
   margin-bottom: 20px;
 
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(border-color);
 }
 .form__textarea::placeholder {
   font-size: 12px;
