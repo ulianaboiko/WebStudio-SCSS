@@ -2,73 +2,273 @@
   padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid $color-border;
+  position: relative;
 }
 .header__container {
   @include flex-just-align-gap(space-between, center, 0px);
 }
+// .menu__list {
+//   @include flex-just-align-gap(none, center, 50px);
+// }
+// .menu__link {
+//   font-weight: 500;
+//   letter-spacing: 0.02em;
+//   text-decoration: none;
+//   color: $color-text-primary;
+//   position: relative;
+
+//   @include transition(color);
+// }
+// .menu__link:hover {
+//   color: $color-text-hover;
+// }
+// .menu__link::after {
+//   content: "";
+//   border-radius: 2px;
+//   width: 100%;
+//   height: 4px;
+//   background-color: $color-text-hover;
+//   position: absolute;
+//   bottom: -28px;
+//   left: 0;
+//   opacity: 0;
+
+//   transform: scaleX(0) translateY(10px);
+//   transform-origin: center;
+//   @include transition(transform);
+//   @include transition(opacity);
+// }
+// .menu__link--active::after,
+// .menu__link:hover::after {
+//   opacity: 1;
+//   transform: scaleX(1) translateY(0);
+// }
+// .header__address {
+//   @include flex-just-align-gap(none, center, 30px);
+// }
+// .address__link {
+//   font-weight: 500;
+//   letter-spacing: 0.02em;
+//   color: $color-text-secondary;
+//   text-decoration: none;
+
+//   @include transition(color);
+// }
+// .address__item:hover .address__link {
+//   color: $color-text-hover;
+// }
+// .address__icon {
+//   fill: $color-text-secondary;
+//   @include transition(fill);
+// }
+// .address__item:hover .address__icon {
+//   fill: $color-text-hover;
+// }
+// .address__icon--one {
+//   width: 16px;
+//   height: 12px;
+//   margin-right: 10px;
+// }
+// .address__icon--two {
+//   width: 10px;
+//   height: 16px;
+//   margin-right: 10px;
+// }
+.header__mobilemenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-text-additional;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+.header__mobilemenu.open {
+  transform: translateX(0);
+}
 .menu__list {
-  @include flex-just-align-gap(none, center, 50px);
+  @include flex-just-align-gap(none, center, 30px);
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  margin-bottom: 300px;
 }
 .menu__link {
   font-weight: 500;
+  font-size: 40px;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: $color-text-primary;
   position: relative;
 
   @include transition(color);
-}
-.menu__link:hover {
-  color: $color-text-hover;
-}
-.menu__link::after {
-  content: "";
-  border-radius: 2px;
-  width: 100%;
-  height: 4px;
-  background-color: $color-text-hover;
-  position: absolute;
-  bottom: -28px;
-  left: 0;
-  opacity: 0;
 
-  transform: scaleX(0) translateY(10px);
-  transform-origin: center;
-  @include transition(transform, opacity);
+  &:hover {
+    color: $color-text-hover;
+  }
 }
-.menu__link--active::after,
-.menu__link:hover::after {
-  opacity: 1;
-  transform: scaleX(1) translateY(0);
-}
+
 .header__address {
-  @include flex-just-align-gap(none, center, 30px);
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 30px;
+  position: absolute;
+  left: 40px;
+  // margin-bottom: 65px;
 }
 .address__link {
   font-weight: 500;
   letter-spacing: 0.02em;
   color: $color-text-secondary;
   text-decoration: none;
+  font-size: 24px;
 
   @include transition(color);
+  &:hover {
+    color: $color-text-hover;
+  }
 }
-.address__item:hover .address__link {
-  color: $color-text-hover;
+.address__link--two {
+  font-size: 34px;
 }
 .address__icon {
-  fill: $color-text-secondary;
-  @include transition(fill);
+  display: none;
 }
-.address__item:hover .address__icon {
-  fill: $color-text-hover;
+.header__social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  @include flex-just-align-gap(center, center, 20px);
+  position: absolute;
+  left: 40px;
 }
-.address__icon--one {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
+.social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22222;
+  letter-spacing: 0.02em;
+  color: $color-text-hover;
 }
-.address__icon--two {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
+.header__btn {
+  display: block;
+  z-index: 10;
+}
+.header__btn {
+  position: relative;
+  width: 20px;
+  height: 15px;
+  background-color: #fff;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    left: 0;
+  }
+
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+}
+.header__btn--icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 1.5px;
+  width: 100%;
+  background-color: #333;
+  transform: translateY(-50%);
+  transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+@media (min-width: 768px) {
+  .header {
+    padding-bottom: 20px;
+  }
+  // .nav-link::after {
+  //   bottom: -36px;
+  // }
+  // .header-address-list {
+  //   flex-direction: column;
+  //   gap: 10px;
+  //   align-items: stretch;
+  // }
+  // .address-icon {
+  //   margin-right: 8px;
+  // }
+  .menu__list {
+    @include flex-just-align-gap(none, center, 50px);
+  }
+  .menu__link::after {
+    content: "";
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background-color: $color-text-hover;
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    opacity: 0;
+
+    transform: scaleX(0) translateY(10px);
+    transform-origin: center;
+    @include transition(transform);
+    @include transition(opacity);
+  }
+  .menu__link--active::after,
+  .menu__link:hover::after {
+    opacity: 1;
+    transform: scaleX(1) translateY(0);
+  }
+  .header__address {
+    @include flex-just-align-gap(none, center, 30px);
+  }
+  .address__link {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: $color-text-secondary;
+    text-decoration: none;
+
+    @include transition(color);
+  }
+  .address__item:hover .address__link {
+    color: $color-text-hover;
+  }
+  .address__icon {
+    fill: $color-text-secondary;
+    @include transition(fill);
+  }
+  .address__item:hover .address__icon {
+    fill: $color-text-hover;
+  }
+  .address__icon--one {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
+  .address__icon--two {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+  }
+  .header__mobilemenu {
+    position: relative;
+  }
+  .header__btn {
+    display: none;
+  }
+  .header__social {
+    display: none;
+  }
 }

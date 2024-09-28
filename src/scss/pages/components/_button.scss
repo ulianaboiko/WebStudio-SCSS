@@ -16,7 +16,9 @@
   height: 38px;
   border-radius: 4px;
   padding: 6px 22px;
-  @include transition(color, background-color, box-shadow);
+  @include transition(color);
+  @include transition(background-color);
+  @include transition(box-shadow);
 }
 .list__button:hover {
   color: $color-text-additional;

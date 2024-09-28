@@ -38,55 +38,78 @@
           />
         </a>
         <!-- навігація -->
-        <nav class="header__menu">
-          <ul class="menu__list">
-            <li class="menu__item">
+        <div class="header__mobilemenu" data-menu>
+          <nav class="header__menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a
+                  href="./index.html"
+                  class="menu__link menu__link--active animate__animated animate__fadeInUp"
+                  >Студія</a
+                >
+              </li>
+              <li class="menu__item">
+                <a
+                  href="./src/pages/portfolio.html"
+                  class="menu__link animate__animated animate__fadeInUp"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="menu__item">
+                <a
+                  href="#"
+                  class="menu__link animate__animated animate__fadeInUp"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="header__address">
+            <li class="address__item">
               <a
-                href="./index.html"
-                class="menu__link menu__link--active animate__animated animate__fadeInUp"
-                >Студія</a
+                class="address__link animate__animated animate__fadeInUp"
+                href="mailto:info@devstudio.com"
               >
+                <svg class="address__icon address__icon--one">
+                  <use
+                    href="./src/images/icons/symbol-defs.svg#icon-email"
+                  ></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="menu__item">
+            <li class="address__item">
               <a
-                href="./src/pages/portfolio.html"
-                class="menu__link animate__animated animate__fadeInUp"
-                >Портфоліо</a
+                class="address__link address__link--two animate__animated animate__fadeInUp"
+                href="tel:+380961111111"
               >
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link animate__animated animate__fadeInUp"
-                >Контакти</a
-              >
+                <svg class="address__icon address__icon--two">
+                  <use
+                    href="./src/images/icons/symbol-defs.svg#icon-smartphone"
+                  ></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="header__address">
-          <li class="address__item">
-            <a
-              class="address__link animate__animated animate__fadeInUp"
-              href="mailto:info@devstudio.com"
-            >
-              <svg class="address__icon address__icon--one">
-                <use href="./src/images/icons/symbol-defs.svg#icon-email"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="address__item">
-            <a
-              class="address__link animate__animated animate__fadeInUp"
-              href="tel:+380961111111"
-            >
-              <svg class="address__icon address__icon--two">
-                <use
-                  href="./src/images/icons/symbol-defs.svg#icon-smartphone"
-                ></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <ul class="header__social">
+            <li class="social__item">
+              <a href="#" class="social__link">Instagram</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">Twitter</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">Facebook</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <button class="header__btn" type="button" data-menu-button>
+          <span class="header__btn--icon"></span>
+        </button>
       </div>
     </header>
     <!-- основний контент -->
@@ -622,5 +645,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="./src/js/mobile-menu.js"></script>
   </body>
 </html>

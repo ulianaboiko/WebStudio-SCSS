@@ -19,7 +19,8 @@
   border-radius: 4px;
   flex-basis: calc((100% - 150px) / 6);
 
-  @include transition(border, fill);
+  @include transition(border);
+  @include transition(fill);
 }
 
 .clients__link:hover .clients__icon {
@@ -33,5 +34,6 @@
   height: 60px;
   fill: $color-icons;
 
-  @include transition(border, fill);
+  @include transition(border);
+  @include transition(fill);
 }

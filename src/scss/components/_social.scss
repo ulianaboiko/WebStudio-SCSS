@@ -24,5 +24,6 @@
   padding: 12px;
   border-radius: 50%;
 
-  @include transition(background-color, fill);
+  @include transition(background-color);
+  @include transition(fill);
 }
