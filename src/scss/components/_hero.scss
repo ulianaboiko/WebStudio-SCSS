@@ -2,8 +2,8 @@
   background-color: $color-background-primary;
   background-image: linear-gradient(to right, #2f303a42, #2f303a42),
     url(../images/heroimg.jpg);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11,14 +11,26 @@
 .hero__container {
   @extend %flex-column;
   gap: 30px;
+  align-items: center;
+  justify-content: center;
 }
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36364;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
   color: $color-text-additional;
-  width: 695px;
+  width: 360px;
+}
+@media (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero__title {
+    font-size: 44px;
+    width: 695px;
+  }
 }

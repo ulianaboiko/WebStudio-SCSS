@@ -1,5 +1,5 @@
 .btn__hero {
-  @include button(4px, 10px 32px);
+  @include button(4px, 10px 24px);
 }
 .btn__hero:hover {
   opacity: 0.9;

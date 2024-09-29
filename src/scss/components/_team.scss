@@ -10,5 +10,15 @@
 }
 .team__members {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1200px) {
+  .team__members {
+    justify-content: space-between;
+    gap: 30px;
+  }
 }

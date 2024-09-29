@@ -1,5 +1,6 @@
 .clients {
-  @extend %paddind-to-section;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .clients__title {
   font-weight: 700;
@@ -8,7 +9,9 @@
   margin-bottom: 50px;
 }
 .clients__list {
-  @include flex-just-align-gap(none, none, 30px);
+  @include flex-just-align-gap(center, center, 30px);
+  flex-wrap: wrap;
+  align-content: stretch;
 }
 .clients__link {
   display: block;
@@ -17,8 +20,7 @@
   padding: 16px 32px;
   border: 1px solid $color-icons;
   border-radius: 4px;
-  flex-basis: calc((100% - 150px) / 6);
-
+  flex-basis: calc((100% - 30px) / 2);
   @include transition(border);
   @include transition(fill);
 }
@@ -36,4 +38,21 @@
 
   @include transition(border);
   @include transition(fill);
+}
+@media (min-width: 768px) {
+  .clients__link {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .clients__list {
+    @include flex-just-align-gap(none, none, 30px);
+  }
+  .clients__link {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }

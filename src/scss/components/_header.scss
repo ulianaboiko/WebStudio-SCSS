@@ -190,7 +190,18 @@
   width: 100%;
   background-color: #333;
   transform: translateY(-50%);
-  transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: transform 0.5s ease;
+}
+.open ~ .header__btn .header__btn--icon {
+  transform: rotate(405deg);
+}
+.open ~ .header__btn::before {
+  transform: rotate(45deg);
+  top: 50%;
+}
+.open ~ .header__btn::after {
+  transform: rotate(-45deg);
+  top: 50%;
 }
 @media (min-width: 768px) {
   .header {

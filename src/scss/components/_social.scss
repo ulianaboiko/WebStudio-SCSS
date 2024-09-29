@@ -3,8 +3,8 @@
   justify-content: space-between;
   gap: 10px;
   text-align: center;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 122px;
+  padding-right: 122px;
 }
 .social__link {
   display: block;
@@ -26,4 +26,16 @@
 
   @include transition(background-color);
   @include transition(fill);
+}
+@media (min-width: 768px) {
+  .social__list {
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+}
+@media (min-width: 1200px) {
+  .social__list {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
