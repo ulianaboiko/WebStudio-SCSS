@@ -144,7 +144,6 @@ body {
   padding-top: 25px;
   padding-bottom: 25px;
   border-bottom: 1px solid #eee;
-  position: relative;
 }
 
 .header__container {
@@ -163,7 +162,7 @@ body {
   background-color: #ffffff;
   z-index: 9;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   transform: translateX(-100%);
   transition: transform 0.5s ease;
@@ -175,8 +174,8 @@ body {
 
 .menu__list {
   display: flex;
-  justify-content: none;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   gap: 30px;
   flex-direction: column;
   position: absolute;
@@ -288,7 +287,7 @@ body {
 }
 
 .open ~ .header__btn .header__btn--icon {
-  transform: rotate(405deg);
+  transform: rotate(45deg);
 }
 
 .open ~ .header__btn::before {
@@ -305,11 +304,24 @@ body {
   .header {
     padding-bottom: 20px;
   }
+  .header__mobilemenu {
+    position: relative;
+    transform: translateX(0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+  }
   .menu__list {
     display: flex;
-    justify-content: none;
+    justify-content: center;
     align-items: center;
     gap: 50px;
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+  .menu__link {
+    font-size: inherit;
   }
   .menu__link::after {
     content: "";
@@ -339,13 +351,14 @@ body {
     display: flex;
     justify-content: none;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
   }
   .address__link {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: #757575;
     text-decoration: none;
+    font-size: 12px;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -371,9 +384,6 @@ body {
     width: 10px;
     height: 16px;
     margin-right: 10px;
-  }
-  .header__mobilemenu {
-    position: relative;
   }
   .header__btn {
     display: none;
