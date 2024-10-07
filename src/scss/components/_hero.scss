@@ -1,7 +1,7 @@
 .hero {
   background-color: $color-background-primary;
   background-image: linear-gradient(to right, #2f303a42, #2f303a42),
-    url(../images/heroimg.jpg);
+    url(../images/hero/heromobile.jpg), url(../images/hero/heromobile@2x.jpg);
   padding-top: 120px;
   padding-bottom: 120px;
   background-repeat: no-repeat;
@@ -24,10 +24,23 @@
   color: $color-text-additional;
   width: 360px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px),
+  (min-resolution: 2dppx),
+  (min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: linear-gradient(to right, #2f303a42, #2f303a42),
+      url(../images/hero/herotablet.jpg), url(../images/hero/herotablet@2x.jpg);
+  }
+}
+@media (min-width: 1200px),
+  (min-resolution: 2dppx),
+  (min-device-pixel-ratio: 2) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(to right, #2f303a42, #2f303a42),
+      url(../images/hero/herodesktop.jpg),
+      url(../images/hero/herodesktop@2x.jpg);
   }
   .hero__title {
     font-size: 44px;

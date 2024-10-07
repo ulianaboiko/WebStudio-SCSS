@@ -394,7 +394,7 @@ body {
 }
 .hero {
   background-color: #2f303a;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.2588235294), rgba(47, 48, 58, 0.2588235294)), url(../images/heroimg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.2588235294), rgba(47, 48, 58, 0.2588235294)), url(../images/hero/heromobile.jpg), url(../images/hero/heromobile@2x.jpg);
   padding-top: 120px;
   padding-bottom: 120px;
   background-repeat: no-repeat;
@@ -419,10 +419,16 @@ body {
   width: 360px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.2588235294), rgba(47, 48, 58, 0.2588235294)), url(../images/hero/herotablet.jpg), url(../images/hero/herotablet@2x.jpg);
+  }
+}
+@media (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-device-pixel-ratio: 2) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.2588235294), rgba(47, 48, 58, 0.2588235294)), url(../images/hero/herodesktop.jpg), url(../images/hero/herodesktop@2x.jpg);
   }
   .hero__title {
     font-size: 44px;
