@@ -394,12 +394,17 @@ body {
 }
 .hero {
   background-color: #2f303a;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.2588235294), rgba(47, 48, 58, 0.2588235294)), url(../images/hero/heromobile.jpg), url(../images/hero/heromobile@2x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.2588235294), rgba(47, 48, 58, 0.2588235294)), url(../images/hero/hero-mobile.jpg);
   padding-top: 120px;
   padding-bottom: 120px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../images/hero/hero-mobile@2x.jpg);
+  }
 }
 
 .hero__container {
@@ -419,17 +424,29 @@ body {
   width: 360px;
 }
 
-@media (min-width: 768px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-device-pixel-ratio: 2) {
+@media (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.2588235294), rgba(47, 48, 58, 0.2588235294)), url(../images/hero/herotablet.jpg), url(../images/hero/herotablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.2588235294), rgba(47, 48, 58, 0.2588235294)), url(../images/hero/hero-tablet.jpg);
   }
 }
-@media (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-device-pixel-ratio: 2) {
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx), (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../images/hero/hero-tablet@2x.jpg);
+  }
+}
+@media (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.2588235294), rgba(47, 48, 58, 0.2588235294)), url(../images/hero/herodesktop.jpg), url(../images/hero/herodesktop@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.2588235294), rgba(47, 48, 58, 0.2588235294)), url(../images/hero/hero-desktop.jpg);
   }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx), (min-width: 1200px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../images/hero/hero-desktop@2x.jpg);
+  }
+}
+@media (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     width: 695px;
