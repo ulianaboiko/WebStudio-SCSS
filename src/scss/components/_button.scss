@@ -26,3 +26,8 @@
   height: 24px;
   fill: $color-text-additional;
 }
+@media (min-width: 1200px) {
+  .btn__hero {
+    padding: 10px 32px;
+  }
+}

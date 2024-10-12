@@ -27,7 +27,6 @@
   text-transform: uppercase;
   text-align: center;
   color: $color-text-additional;
-  width: 360px;
 }
 @media (min-width: 768px) {
   .hero {
@@ -38,6 +37,9 @@
       (-webkit-min-device-pixel-ratio: 2) {
       background-image: url(../images/hero/hero-tablet@2x.jpg);
     }
+  }
+  .hero__title {
+    max-width: 360px;
   }
 }
 @media (min-width: 1200px) {
@@ -54,6 +56,6 @@
   }
   .hero__title {
     font-size: 44px;
-    width: 695px;
+    max-width: 695px;
   }
 }
