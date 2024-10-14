@@ -39,7 +39,6 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: $color-text-primary;
-  // position: relative;
 
   @include transition(color);
 
@@ -47,7 +46,6 @@
     color: $color-text-hover;
   }
 }
-
 .header__address {
   display: flex;
   flex-direction: column-reverse;
@@ -147,12 +145,15 @@
 
 @media (min-width: 768px) {
   .header {
+    padding-top: 20px;
     padding-bottom: 20px;
   }
   .header__mobilemenu {
     position: relative;
     transform: translateX(0);
+    flex-direction: row;
     @include flex-just-align-gap(space-between, center, 0px);
+    padding: 0;
   }
   .menu__list {
     @include flex-just-align-gap(center, center, 50px);
@@ -161,22 +162,23 @@
   }
   .menu__link {
     font-size: inherit;
-  }
-  .menu__link::after {
-    content: "";
-    border-radius: 2px;
-    width: 100%;
-    height: 4px;
-    background-color: $color-text-hover;
-    position: absolute;
-    bottom: -28px;
-    left: 0;
-    opacity: 0;
+    position: relative;
+    &::after {
+      content: "";
+      border-radius: 2px;
+      width: 100%;
+      height: 4px;
+      background-color: $color-text-hover;
+      position: absolute;
+      bottom: -36px;
+      left: 0;
+      opacity: 0;
 
-    transform: scaleX(0) translateY(10px);
-    transform-origin: center;
-    @include transition(transform);
-    @include transition(opacity);
+      transform: scaleX(0) translateY(10px);
+      transform-origin: center;
+      @include transition(transform);
+      @include transition(opacity);
+    }
   }
   .menu__link--active::after,
   .menu__link:hover::after {
@@ -184,7 +186,9 @@
     transform: scaleX(1) translateY(0);
   }
   .header__address {
-    @include flex-just-align-gap(none, center, 10px);
+    @include flex-just-align-gap(flex-start, center, 10px);
+    flex-direction: column-reverse;
+    margin-bottom: 0;
   }
   .address__link {
     font-weight: 500;
@@ -219,7 +223,17 @@
   .header__btn {
     display: none;
   }
-  .header__social {
+  .header__web {
     display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .menu__link::after {
+    content: "";
+    bottom: -23px;
+  }
+  .header__address {
+    @include flex-just-align-gap(flex-start, center, 30px);
+    flex-direction: row;
   }
 }
