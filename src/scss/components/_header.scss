@@ -74,6 +74,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
   @include flex-just-align-gap(center, center, 20px);
 }
 .web__link {

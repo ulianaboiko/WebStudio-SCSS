@@ -20,7 +20,7 @@
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 .project__photo {
-  width: 450px;
+  min-width: 400px;
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
@@ -66,11 +66,8 @@
   .projects__contanier {
     column-gap: 30px;
   }
-  .project {
-    flex-basis: calc((100% - 30px) / 2);
-  }
   .project__photo {
-    width: 355px;
+    min-width: 355px;
   }
   .project__overlay {
     padding: 50px 25px;
@@ -85,7 +82,7 @@
     flex-basis: calc((100% - 60px) / 3);
   }
   .project__photo {
-    width: 369px;
+    min-width: 369px;
   }
   .project__overlay {
     padding: 65px 25px;
