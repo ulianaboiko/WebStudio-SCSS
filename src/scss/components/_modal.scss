@@ -9,6 +9,7 @@
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -23,7 +24,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  min-width: 530px;
+  min-width: 430px;
   min-height: 580px;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
@@ -57,4 +58,14 @@
 }
 .no-scroll {
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .modal {
+    min-width: 430px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal {
+    min-width: 530px;
+  }
 }

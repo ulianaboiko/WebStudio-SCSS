@@ -47,9 +47,8 @@
     row-gap: 30px;
     justify-content: space-between;
   }
-  .advantages-item {
+  .advantages__item {
     flex-basis: calc((100% - 30px) / 2);
-    // max-width: 350px;
   }
 }
 @media (min-width: 1200px) {
